@@ -11,7 +11,7 @@ class BankAccount:
         if amount <= 0:
             raise ValueError("Withdrawal amount must be positive")
         if amount > self.__account_balance:
-            raise ValueError("Insufficient balance")
+            raise ValueError("Insufficient funds.")
         self.__account_balance -= amount
         print(f"Withdrew: ${amount:.2f}")  # Print success message
 
