@@ -13,6 +13,7 @@ class BankAccount:
         if amount > self.__account_balance:
             raise ValueError("Insufficient balance")
         self.__account_balance -= amount
+        print(f"Withdrew: ${amount:.2f}")  # Print success message
 
     def display_balance(self):
         print(f"Current Balance: ${self.__account_balance:.2f}")
