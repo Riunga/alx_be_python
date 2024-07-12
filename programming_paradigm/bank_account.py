@@ -23,4 +23,3 @@ class BankAccount:
 
     def display_balance(self):
         print(f"Current Balance: ${self.__account_balance:.1f}".rstrip('0').rstrip('.'))
-
